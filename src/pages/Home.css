@@ -1,0 +1,124 @@
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .profile {
+    position: relative;
+  }
+  
+  .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  .profile:hover .profile-dropdown {
+    display: block;
+  }
+  
+  .profile-dropdown p {
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  .profile-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  
+  .profile-dropdown li {
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .profile-dropdown li:hover {
+    color: #007bff;
+  }
+  
+  /* Catalog styles */
+  .catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .catalog-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .catalog-item.highlight {
+    background-color: #f0f0f0;
+  }
+  
+  .catalog-item img {
+    width: 100%;
+  }
+  
+  .catalog-item h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+  }
+  
+  .catalog-item p {
+    margin: 0.5em 0;
+  }
+  
+  .bid-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .bid-button:hover {
+    background-color: #0056b3;
+  }
